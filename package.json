@@ -1,0 +1,12 @@
+{
+  "name": "smart-traffic-violation-reporting-system",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Smart Traffic Violation Reporting System (root wrapper so hosts can build from the repo root)",
+  "scripts": {
+    "postinstall": "npm --prefix backend install --omit=dev",
+    "start": "npm --prefix backend start",
+    "db:setup": "npm --prefix backend run db:setup"
+  },
+  "engines": { "node": ">=20" }
+}
