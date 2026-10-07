@@ -97,7 +97,7 @@ function renderLogin() {
               <path d="M70 -4 L50 40 H64 L54 84 L84 28 H68 Z" fill="#fff" opacity=".0" class="bolt"/>
             </svg>
           </div>
-          <h1>Smarter roads,<br><span class="grad-text neon-text">electrifying</span><br>enforcement.</h1>
+          <h1>Smarter roads,<br><span class="grad-text">simpler</span><br>enforcement.</h1>
         </div>
         <p class="lead">Citizens report violations with photo evidence, officers verify them, fines are issued automatically and every step is stored in a relational MySQL database with a full audit trail.</p>
         <div class="auth-points">

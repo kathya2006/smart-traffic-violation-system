@@ -191,3 +191,24 @@
 .modal h3 { display: flex; align-items: center; gap: 10px; }
 .modal h3 .ic { width: 22px; height: 22px; color: var(--cyan); filter: drop-shadow(0 0 6px rgba(0, 229, 255, .6)); }
 .panel h4 .ic { width: 16px; height: 16px; color: var(--cyan); }
+
+/* ===== Calm theme: no animated glow, lightning or neon ===== */
+.bg-mesh, .orb, .bg-grid, .electric-underline, .arcs, .bolt { display: none !important; }
+.bg-layer { background: radial-gradient(120% 90% at 50% 0%, #0d1546 0%, #080d2b 45%, #050820 100%); }
+.electric::after, .glass::before { display: none !important; }
+.glass { box-shadow: 0 10px 30px rgba(0, 0, 0, .3), inset 0 1px 0 rgba(255, 255, 255, .08); -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px); }
+.neon-text, .kpi-value, .fine-total, .estimate .big, .rank-no { text-shadow: none !important; box-shadow: none !important; }
+.card-title svg, .modal h3 .ic, .signal-art svg { filter: none !important; }
+.btn.primary, .btn.primary:hover, .btn.success, .btn.danger, .btn.warn { box-shadow: none; }
+.btn.primary::after { display: none; }
+.btn.ghost:hover, .chip.active, .tab.active, .pager button.active, .method.active, .type-card.active, .map-pin, .badge::before, .cat-dot { box-shadow: none !important; }
+.tbl-card:hover, .kpi:hover { box-shadow: none; }
+.pulse-dot { animation: none; box-shadow: none; }
+.radar-map .sweep { display: none; }
+.map-pin.active { animation: none; }
+.dropzone:hover, .dropzone.over { box-shadow: none; }
+.timeline::before { box-shadow: none; }
+.tl-item::before, .tl-item.last::before { box-shadow: none; animation: none; }
+.progress > i { box-shadow: none; }
+.lamp { filter: none; }
+.heatmap i { box-shadow: none; }

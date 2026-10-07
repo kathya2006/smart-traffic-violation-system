@@ -26,7 +26,7 @@ const centerText = {
     const cx = (left + right) / 2; const cy = (top + bottom) / 2;
     ctx.save(); ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
     ctx.fillStyle = '#ffffff'; ctx.font = '700 28px "Space Grotesk", Inter, sans-serif';
-    ctx.shadowColor = 'rgba(0,229,255,.7)'; ctx.shadowBlur = 16;
+    
     ctx.fillText(opts.text, cx, cy - (opts.sub ? 8 : 0));
     if (opts.sub) { ctx.shadowBlur = 0; ctx.fillStyle = '#8f9cd6'; ctx.font = '500 12px Inter, sans-serif'; ctx.fillText(opts.sub, cx, cy + 17); }
     ctx.restore();
@@ -35,7 +35,7 @@ const centerText = {
 
 export function initCharts() {
   if (!Chart) return;
-  Chart.register(neon, centerText);
+  Chart.register(centerText);
   const d = Chart.defaults;
   d.color = '#9fb0ea';
   d.font.family = 'Inter, system-ui, sans-serif';
