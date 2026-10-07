@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#070b1d"/><stop offset="1" stop-color="#121a3c"/></linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#151d42"/><stop offset="1" stop-color="#0a0f26"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="800" height="500" fill="url(#sky)"/>
+  <polygon points="0,500 800,500 800,230 0,230" fill="url(#road)"/>
+  <polygon points="330,230 470,230 800,500 0,500" fill="#0d1330"/>
+  <g stroke="#3b4a8f" stroke-width="3" opacity=".7"><line x1="400" y1="230" x2="400" y2="500" stroke-dasharray="22 18"/><line x1="360" y1="230" x2="150" y2="500"/><line x1="440" y1="230" x2="650" y2="500"/></g>
+  <g fill="#1a2350" opacity=".8"><rect x="20" y="120" width="90" height="110"/><rect x="130" y="90" width="70" height="140"/><rect x="620" y="110" width="80" height="120"/><rect x="710" y="140" width="70" height="90"/></g>
+  <g fill="#ffd166" opacity=".55"><rect x="32" y="140" width="10" height="10"/><rect x="60" y="170" width="10" height="10"/><rect x="146" y="120" width="10" height="10"/><rect x="640" y="140" width="10" height="10"/><rect x="730" y="165" width="10" height="10"/></g>
+  
+    <g transform="translate(314,250)">
+      <rect x="0" y="40" width="220" height="70" rx="14" fill="#1b2347" stroke="#2c3a78" stroke-width="2"/>
+      <path d="M30 40 L60 0 H160 L195 40 Z" fill="#232d5c" stroke="#2c3a78" stroke-width="2"/>
+      <circle cx="55" cy="112" r="20" fill="#0b1026" stroke="#3a4a92" stroke-width="3"/>
+      <circle cx="170" cy="112" r="20" fill="#0b1026" stroke="#3a4a92" stroke-width="3"/>
+      <rect x="85" y="68" width="50" height="18" rx="3" fill="#e8ecff" opacity=".85"/>
+      <text x="110" y="82" font-family="monospace" font-size="11" text-anchor="middle" fill="#0b1026">TN ?? ?? ????</text>
+    </g>
+  <g filter="url(#glow)" fill="none" stroke="#ff3d71" stroke-width="3">
+    <rect x="299" y="225" width="250" height="150" rx="6"/>
+    <path d="M299 245 v-20 h20 M549 245 v-20 h-20" stroke-width="5"/>
+  </g>
+  <rect x="299" y="198" width="190" height="26" rx="4" fill="#ff3d71"/>
+  <text x="309" y="217" font-family="monospace" font-size="15" font-weight="bold" fill="#070b1d">RED LIGHT</text>
+  <rect x="0" y="0" width="800" height="44" fill="#000" opacity=".55"/>
+  <circle cx="26" cy="22" r="7" fill="#ff3d71"><animate attributeName="opacity" values="1;.2;1" dur="1.4s" repeatCount="indefinite"/></circle>
+  <text x="44" y="28" font-family="monospace" font-size="16" fill="#d7dcff">REC  CAM-01 · ANNA SALAI</text>
+  <text x="780" y="28" font-family="monospace" font-size="14" fill="#8e9bd6" text-anchor="end">DEMO FRAME</text>
+  <rect x="0" y="456" width="800" height="44" fill="#000" opacity=".55"/>
+  <text x="20" y="484" font-family="monospace" font-size="16" fill="#ff3d71">SIGNAL: RED</text>
+  <text x="780" y="484" font-family="monospace" font-size="13" fill="#8e9bd6" text-anchor="end">simulated placeholder - not a real photo</text>
+</svg>

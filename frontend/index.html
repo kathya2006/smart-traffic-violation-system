@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#050820">
+  <meta name="description" content="Smart Traffic Violation Reporting System - report, verify, fine and analyse traffic violations.">
+  <title>Smart Traffic Violation Reporting System</title>
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+
+  <!-- animated background: gradient mesh, glowing orbs, perspective grid -->
+  <div class="bg-layer" aria-hidden="true">
+    <div class="bg-mesh"></div>
+    <div class="orb orb-a"></div>
+    <div class="orb orb-b"></div>
+    <div class="orb orb-c"></div>
+    <div class="bg-grid"></div>
+  </div>
+  <!-- lightning bolts + particles + cursor sparks -->
+  <canvas id="fx" aria-hidden="true"></canvas>
+  <div id="flash" class="flash" aria-hidden="true"></div>
+
+  <div id="boot" class="boot">
+    <div class="boot-signal"><i class="r"></i><i class="a"></i><i class="g"></i></div>
+    <p>Connecting to the traffic network...</p>
+  </div>
+
+  <div id="root"></div>
+  <div id="overlay-root"></div>
+  <div id="toasts" class="toast-stack" aria-live="polite"></div>
+
+  <noscript><p style="padding:40px;color:#fff">This application needs JavaScript enabled.</p></noscript>
+
+  <script src="vendor/chart.umd.js"></script>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
